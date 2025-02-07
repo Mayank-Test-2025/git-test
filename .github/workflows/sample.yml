@@ -36,7 +36,13 @@ jobs:
         run: |
           echo BUILD: Add other actions to build,
           echo test, and deploy your project."
-
+          
+          with:
+            # Artifact name
+            name: Build-Artifact
+            # A file, directory or wildcard pattern that describes what to upload
+            path: ${{github.workspace}}
+    
   # This workflow contains a single job called "build"
   test:
     # The type of runner that the job will run on
