@@ -35,7 +35,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo BUILD: Add other actions to build,
-          echo test, and deploy your project."
+          echo test, and deploy your project.
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.0
